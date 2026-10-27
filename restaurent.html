@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding and viewport settings for basic mobile display -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cozy Cafe</title>
+
+    <!-- All our simple CSS goes inside this style tag -->
+    <style>
+        /* 1. GLOBAL STYLES */
+        body {
+            font-family: Arial, sans-serif; /* A simple, standard font */
+            margin: 0; /* Removes default browser margin */
+            padding: 0;
+            background-color: #fdf8f5; /* A light warm background color */
+            color: #333; /* Dark gray text for readability */
+        }
+
+        /* 2. HEADER AND NAVIGATION */
+        header {
+            background-color: #4a3022; /* Dark coffee brown */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0; /* Removes extra space around the heading */
+        }
+
+        nav {
+            background-color: #2b1b12; /* Darker brown for the menu bar */
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none; /* Removes the underline from links */
+            margin: 0 15px; /* Adds space between the links */
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #f39c12; /* Changes color when you hover over the link */
+        }
+
+        /* 3. SECTION STYLES */
+        section {
+            padding: 40px 20px; /* Space inside the sections */
+            text-align: center; /* Centers the headings and text */
+        }
+
+        .container {
+            max-width: 900px; /* Keeps the content from stretching too wide on big screens */
+            margin: 0 auto; /* Centers the container on the page */
+        }
+
+        h2 {
+            color: #4a3022;
+            margin-bottom: 20px;
+        }
+
+        /* 4. CARD STYLES (Used for Menu and Chefs) */
+        .card-container {
+            display: flex; /* Arranges items side by side */
+            justify-content: center;
+            gap: 20px; /* Space between cards */
+            flex-wrap: wrap; /* Allows cards to wrap to the next line on small screens */
+        }
+
+        .card {
+            background-color: white;
+            border: 1px solid #ddd; /* A light border */
+            border-radius: 8px; /* Rounded corners */
+            padding: 20px;
+            width: 250px; /* Fixed width for the cards */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* A soft shadow */
+        }
+
+        .price {
+            color: #d35400; /* Orange color for price */
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        /* 5. FORM STYLES */
+        form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 500px;
+            margin: 0 auto; /* Centers the form */
+            text-align: left; /* Aligns form text to the left */
+        }
+
+        label {
+            display: block; /* Puts labels on their own line */
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%; /* Makes inputs take up the full width */
+            padding: 10px;
+            margin-bottom: 15px; /* Space below each input */
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Ensures padding doesn't increase total width */
+        }
+
+        button {
+            background-color: #4a3022;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer; /* Changes the mouse to a pointing hand */
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #2b1b12; /* Darkens the button on hover */
+        }
+
+        /* 6. FOOTER STYLES */
+        footer {
+            background-color: #4a3022;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER: The top part of the website with the title -->
+    <header>
+        <h1>The Cozy Cafe</h1>
+        <p>Fresh Food & Great Coffee</p>
+    </header>
+
+    <!-- NAVIGATION: The links to click and scroll to sections -->
+    <nav>
+        <a href="#menu">Menu</a>
+        <a href="#chefs">Our Chefs</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#reservation">Book a Table</a>
+    </nav>
+
+    <!-- MAIN CONTENT AREA -->
+    <main>
+
+        <!-- MENU SECTION -->
+        <section id="menu">
+            <div class="container">
+                <h2>Our Menu</h2>
+                <div class="card-container">
+                    
+                    <!-- Menu Item 1 -->
+                    <div class="card">
+                        <h3>Classic Espresso</h3>
+                        <p>Rich and bold espresso brewed from fresh arabica beans.</p>
+                        <p class="price">$3.50</p>
+                    </div>
+
+                    <!-- Menu Item 2 -->
+                    <div class="card">
+                        <h3>Butter Croissant</h3>
+                        <p>Flaky, warm, and freshly baked every morning.</p>
+                        <p class="price">$4.00</p>
+                    </div>
+
+                    <!-- Menu Item 3 -->
+                    <div class="card">
+                        <h3>Grilled Cheese</h3>
+                        <p>Crispy sourdough bread with melted cheddar and mozzarella.</p>
+                        <p class="price">$7.50</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CHEFS SECTION -->
+        <!-- Adding a slightly different background color for contrast -->
+        <section id="chefs" style="background-color: #f4e8e1;">
+            <div class="container">
+                <h2>Meet Our Chefs</h2>
+                <div class="card-container">
+                    
+                    <div class="card">
+                        <h3>Chef Mario</h3>
+                        <p>Specializes in Italian pastries and fresh bread baking.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Chef Anna</h3>
+                        <p>Our head barista and creator of our signature lattes.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS SECTION -->
+        <section id="testimonials">
+            <div class="container">
+                <h2>Customer Reviews</h2>
+                <p><i>"The best coffee in town! The atmosphere is so relaxing."</i> - Sarah J.</p>
+                <br>
+                <p><i>"I love coming here for breakfast. The croissants are amazing."</i> - Mark T.</p>
+            </div>
+        </section>
+
+        <!-- RESERVATION FORM SECTION -->
+        <section id="reservation" style="background-color: #f4e8e1;">
+            <div class="container">
+                <h2>Book a Table</h2>
+                <p>Reserve your spot online easily.</p>
+                
+                <!-- The Form -->
+                <form action="#" method="get">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time" required>
+
+                    <label for="guests">Number of Guests:</label>
+                    <select id="guests" name="guests">
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4+ People</option>
+                    </select>
+
+                    <button type="submit">Confirm Reservation</button>
+                </form>
+
+            </div>
+        </section>
+
+    </main>
